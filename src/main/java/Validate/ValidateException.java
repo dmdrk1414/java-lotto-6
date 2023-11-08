@@ -24,7 +24,6 @@ public class ValidateException {
     private static final Integer END_BONUS_NUMBER = 45;
     private static final String SEQUENCE_COMMA = ",,";
     private static final char CHAR_DASH = '-';
-    // ================== 유저 ==================
     private static final Integer BASIC_LOTTO_PRICE = 1000;
 
     public static void includeString(String strLine) {
@@ -95,6 +94,8 @@ public class ValidateException {
         }
         return false;
     }
+    
+    // ================== 유저 ==================
 
     public static boolean isMultipleOf1000(int amount) {
         if ((amount % BASIC_LOTTO_PRICE) == ZERO_NUM) {
